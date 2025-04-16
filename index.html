@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusUp — Clareza. Produtividade. Leveza.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans">
+
+    <!-- Toggle Dark Mode -->
+    <div class="fixed top-4 right-4 z-50">
+      <button onclick="document.documentElement.classList.toggle('dark')" 
+              class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full hover:scale-105 transition">
+        🌗
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-md p-4 sticky top-0 z-40">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">FocusUp</h1>
+        <nav class="space-x-4">
+          <a href="#recursos" class="hover:text-indigo-600 dark:hover:text-indigo-400">Recursos</a>
+          <a href="#sobre" class="hover:text-indigo-600 dark:hover:text-indigo-400">Sobre</a>
+          <a href="#contato" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-24 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+      <h2 class="text-5xl font-extrabold mb-4">Menos distração. Mais ação.</h2>
+      <p class="text-xl mb-8 max-w-xl mx-auto">O FocusUp é o seu novo parceiro para dias mais produtivos, sem peso e sem complicação.</p>
+      <a href="#contato" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-indigo-100 transition">Testar grátis</a>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">⌛ Pomodoro</h3>
+          <p>Use ciclos de foco e pausa com alertas suaves. Simples e eficaz.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">📊 Relatórios</h3>
+          <p>Acompanhe seu progresso diário com gráficos claros e metas visuais.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">🧘 Modo Zen</h3>
+          <p>Trabalhe em tela cheia, com foco absoluto. Adeus abas aleatórias.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 bg-white dark:bg-gray-950 text-center">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Quem está por trás?</h2>
+        <p class="text-lg">Um grupo de devs cansados de perder tempo. Criamos o FocusUp porque ninguém merece terminar o dia com 50 abas abertas e nada feito.</p>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold mb-4">Fale com a gente</h2>
+        <p class="mb-6">Quer testar, dar feedback ou só bater um papo? Estamos por aqui.</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Seu nome" class="w-full p-3 border rounded bg-white dark:bg-gray-800" />
+          <input type="email" placeholder="Seu e-mail" class="w-full p-3 border rounded bg-white dark:bg-gray-800" />
+          <textarea placeholder="Sua mensagem" class="w-full p-3 border rounded h-32 bg-white dark:bg-gray-800"></textarea>
+          <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+      © 2025 FocusUp. Feito com foco e fé no café.
+    </footer>
+
+  </body>
+</html>
